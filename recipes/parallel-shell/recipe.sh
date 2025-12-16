@@ -6,7 +6,7 @@
 cat $INPUT_FILE | awk 'BEGIN {print "--- Processed File ---"} {print NR": "$0}' > $OUTPUT_FILE  
 
 # Step 2: Add metadata timestamp
-echo "Processed at: $(date)" >> $OUTPUT_FILE
+cat $INPUT_FILE > $OUTPUT_FILE && echo "Processed at: $(date)" >> $OUTPUT_FILE
 
 # Step 3: Count lines and append summary
-echo "Total lines: $(wc -l < $INPUT_FILE)" >> $OUTPUT_FILE
+cat $INPUT_FILE > $OUTPUT_FILE && echo "Total lines: $(wc -l < $INPUT_FILE)" >> $OUTPUT_FILE
