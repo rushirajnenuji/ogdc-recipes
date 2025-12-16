@@ -9,4 +9,4 @@ cat $INPUT_FILE | awk 'BEGIN {print "--- Processed File ---"} {print NR": "$0}' 
 echo "Processed at: $(date)" >> $OUTPUT_FILE
 
 # Step 3: Count lines and append summary
-echo "Total lines: $(wc -l < $OUTPUT_FILE)" >> $OUTPUT_FILE
+echo "Total lines: $(wc -l < $INPUT_FILE)" >> $OUTPUT_FILE
