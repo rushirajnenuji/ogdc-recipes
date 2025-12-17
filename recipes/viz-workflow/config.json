@@ -11,7 +11,7 @@
   "tms_id": "WGS1984Quad",
   "z_range": [
     0,
-    5
+    2
   ],
   "geometricError": 57,
   "z_coord": 0,
