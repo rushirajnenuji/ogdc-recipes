@@ -1,13 +1,13 @@
 {
   "deduplicate_clip_to_footprint": false,
-  "dir_input": "/mnt/workflow/viz-workflow/output/batch/",
+  "dir_input": "inputs",
   "ext_input": ".gpkg",
-  "dir_staged": "/mnt/workflow/viz-workflow/output/staged/",
-  "dir_geotiff": "/mnt/workflow/viz-workflow/output/raster/geotiff/",
-  "dir_web_tiles": "/mnt/workflow/viz-workflow/output/raster/web-tiles/",
-  "filename_staging_summary": "/mnt/workflow/viz-workflow/output/staged/staging_summary.csv",
-  "filename_rasterization_events": "/mnt/workflow/viz-workflow/output/raster/rasterization_events.csv",
-  "filename_rasters_summary": "/mnt/workflow/viz-workflow/output/raster/rasters_summary.csv",
+  "dir_staged": "output/staged/",
+  "dir_geotiff": "output/raster/geotiff/",
+  "dir_web_tiles": "output/raster/web-tiles/",
+  "filename_staging_summary": "output/staged/staging_summary.csv",
+  "filename_rasterization_events": "output/raster/rasterization_events.csv",
+  "filename_rasters_summary": "output/raster/rasters_summary.csv",
   "tms_id": "WGS1984Quad",
   "z_range": [
     0,
@@ -33,5 +33,8 @@
     }
   ],
   "deduplicate_method": null,
-  "deduplicate_at": null
+  "deduplicate_at": null,
+  "enable_stager": true,
+  "enable_raster": false,
+  "enable_3dtiles": true,
 }
