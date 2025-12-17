@@ -1,6 +1,6 @@
 {
   "deduplicate_clip_to_footprint": false,
-  "dir_input": "inputs",
+  "dir_input": "input",
   "ext_input": ".gpkg",
   "dir_staged": "output/staged/",
   "dir_geotiff": "output/raster/geotiff/",
