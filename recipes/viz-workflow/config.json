@@ -36,5 +36,5 @@
   "deduplicate_at": null,
   "enable_stager": true,
   "enable_raster": false,
-  "enable_3dtiles": true,
+  "enable_3dtiles": true
 }
