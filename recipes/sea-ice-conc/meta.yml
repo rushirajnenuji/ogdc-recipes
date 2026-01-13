@@ -3,7 +3,7 @@ workflow:
   type: "shell"
 input:
   params: 
-    - value: "https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/geotiff/09_Sep/N_202309_concentration_v3.0.tif"
+    - value: "https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/geotiff/09_Sep/N_202309_concentration_v4.0.tif"
       type: "url"
 output:
   dataone_id: "TODO"
