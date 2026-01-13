@@ -1,12 +1,8 @@
 #!/bin/sh
-# Simple parallel processing example using busybox
-# Each command will be executed in parallel across partitions
 
-# Step 1: Process files - add header and line numbers
-cat $INPUT_FILE | awk 'BEGIN {print "--- Processed File ---"} {print NR": "$0}' > $OUTPUT_FILE  
+# Parallel GeoPackage processing - Reproject and Convert
+# Each partition processes its assigned files independently
 
-# Step 2: Add metadata timestamp
-cat $INPUT_FILE > $OUTPUT_FILE && echo "Processed at: $(date)" >> $OUTPUT_FILE
+ogr2ogr -f GPKG -t_srs EPSG:4326 $INPUT_FILE && echo "Reprojected $INPUT_FILE to EPSG:4326"
 
-# Step 3: Count lines and append summary
-cat $INPUT_FILE > $OUTPUT_FILE && echo "Total lines: $(wc -l < $INPUT_FILE)" >> $OUTPUT_FILE
+ogr2ogr -f GeoJSON $OUTPUT_FILE $INPUT_FILE && echo "Converted $INPUT_FILE to GeoJSON"
