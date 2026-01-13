@@ -1,4 +1,4 @@
-name: "Test parallel shell workflow"
+name: "Test parallel transform workflow"
 input:
   params:
     - value: "https://demo.arcticdata.io/tiles/3dtt/QGnet/processing/ib/input/ice_basins_filled.gpkg"
