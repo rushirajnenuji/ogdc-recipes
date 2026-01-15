@@ -105,7 +105,6 @@ input:
       value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_part_0051.csv"
     - type: "url"
       value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_part_0052.csv"
-
 workflow:
   type: "shell"
   parallel:
