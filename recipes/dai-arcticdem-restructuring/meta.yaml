@@ -4,7 +4,7 @@ input:
     - type: "url"
       value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_part_0001.csv"
     - type: "url"
-      value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_p  art_0002.csv"
+      value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_part_0002.csv"
     - type: "url"
       value: "https://demo.arcticdata.io/tiles/3dtt/PDG/ogdc-dai-test/chunks/tile_index_summary_jump_part_0003.csv"
     - type: "url"
