@@ -1,0 +1,30 @@
+# OGDC Visualization Workflow Recipe Configuration
+#
+# This recipe processes geospatial data for visualization using the pdgworkflow.WorkflowManager.
+# The workflow converts vector data into web tiles for interactive mapping and archival.
+#
+# Documentation:
+# - Viz workflow overview: https://github.com/PermafrostDiscoveryGateway/viz-workflow
+# - ConfigManager docs: https://github.com/PermafrostDiscoveryGateway/viz-workflow/blob/feature-wf-k8s/pdgworkflow/ConfigManager.py
+# - ConfigManager config options: See config.json in this directory for example configuration
+#
+# Configuration Notes:
+# - If config.json is missing, ConfigManager will use default behavior
+# - Output includes staged data, GeoTIFF rasters, and web tiles
+
+name: "PDG lake change"
+# IMPORTANT: _ is not allowed in k8s object names, and we will use this string
+# to create those, so we have to ban _. Only allowed chars are `-`, `.`,
+# lowercase alphanumeric. Is there a pydantic validator we can use? We need to
+# design a schema for meta.yaml too. That should probably live in the
+# runner...?
+workflow:
+  type: "visualization"
+  config_file: "config.json"
+input:
+  params:
+    - value: "https://demo.arcticdata.io/tiles/3dtt/PDG/lakechange/merged.gpkg"
+      type: "url"
+output:
+  dataone_id: "TODO"
+image: "ghcr.io/permafrostdiscoverygateway/pdgworkflow:latest"
