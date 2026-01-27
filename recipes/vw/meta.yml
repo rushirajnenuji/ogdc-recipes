@@ -27,6 +27,7 @@ input:
       type: "url"
 output:
   dataone_id: "TODO"
+image: "vizworkflow:latest"
 parallel:
   enabled: true
   partition_strategy: "files"
