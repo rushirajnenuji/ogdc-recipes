@@ -1,0 +1,41 @@
+{
+  "deduplicate_clip_to_footprint": false,
+  "dir_input": "input",
+  "ext_input": ".gpkg",
+  "dir_staged": "output/staged/",
+  "dir_geotiff": "output/raster/geotiff/",
+  "dir_web_tiles": "output/raster/web-tiles/",
+  "filename_staging_summary": "output/staged/staging_summary.csv",
+  "filename_rasterization_events": "output/raster/rasterization_events.csv",
+  "filename_rasters_summary": "output/raster/rasters_summary.csv",
+  "tms_id": "WGS1984Quad",
+  "z_range": [
+    0,
+    2
+  ],
+  "geometricError": 57,
+  "z_coord": 0,
+  "statistics": [
+    {
+      "name": "coverage",
+      "weight_by": "area",
+      "property": "area",
+      "aggregation_method": "sum",
+      "resampling_method": "average",
+      "palette": [
+        "#edf8e9",
+        "#a1d99b",
+        "#41ab5d",
+        "#005a32"
+      ],
+      "nodata_val": 0,
+      "nodata_color": "#ffffff00"
+    }
+  ],
+  "deduplicate_method": null,
+  "deduplicate_at": null,
+  "enable_stager": true,
+  "enable_raster": false,
+  "enable_web_tiles": false,
+  "enable_3dtiles": false
+}
