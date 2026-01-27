@@ -21,6 +21,10 @@ name: "ADC Visualization workflow"
 workflow:
   type: "visualization"
   config_file: "config.json"
+  parallel:
+    enabled: true
+    partition_strategy: "files"
+    partition_size: 1000
 input:
   params:
     - value: "https://demo.arcticdata.io/tiles/OGDC/QGnet/viz-workflow/ice_basins.gpkg"
@@ -28,7 +32,3 @@ input:
 output:
   dataone_id: "TODO"
 image: "vizworkflow:latest"
-parallel:
-  enabled: true
-  partition_strategy: "files"
-  partition_size: 1000
