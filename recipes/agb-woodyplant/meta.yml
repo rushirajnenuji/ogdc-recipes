@@ -1,0 +1,19 @@
+name: "Arctic Woody Plant AGB Greenland"
+
+workflow:
+  type: "shell"
+
+input:
+  params:
+    - type: "dataone"
+      dataset_identifier: "resource_map_doi:10.18739/A2NS0M06B"
+      filename: "woodyplant_agb_2020_p500_B3.tif"
+    - type: "dataone"
+      dataset_identifier: "resource_map_doi:10.18739/A2NS0M06B"
+      filename: "woodyplant_agb_2020_p500_A3.tif"
+    - type: "dataone"
+      dataset_identifier: "resource_map_doi:10.18739/A2NS0M06B"
+      filename: "woodyplant_agb_2020_p500_B2.tif"
+
+output:
+  type: "temporary"

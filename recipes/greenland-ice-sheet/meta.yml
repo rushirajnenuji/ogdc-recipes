@@ -1,0 +1,13 @@
+name: "Greenland Ice Sheet sea-level contribution"
+
+workflow:
+  type: "shell"
+
+input:
+  params:
+    - type: "dataone"
+      dataset_identifier: "resource_map_doi:10.18739/A29G5GD39"
+      filename: "percent_gris_*.nc" 
+
+output:
+  type: "temporary"

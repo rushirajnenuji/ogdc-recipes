@@ -6,4 +6,4 @@ input:
     - value: "https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/geotiff/09_Sep/N_202309_concentration_v4.0.tif"
       type: "url"
 output:
-  dataone_id: "TODO"
+  type: "temporary"
