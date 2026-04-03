@@ -24,7 +24,7 @@ workflow:
   parallel:
     enabled: true
     partition_strategy: "files"
-    partition_size: 1000
+    partition_size: 10
 input:
   params:
     - value: "https://demo.arcticdata.io/tiles/OGDC/QGnet/viz-workflow/ice_basins.gpkg"
